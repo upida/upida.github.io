@@ -1,0 +1,8 @@
+.profile-page{
+    margin: 70px;
+    width: none;
+}
+.profile-img{
+    border-radius: 50px;
+    box-shadow: 5px 10px #888888;
+}

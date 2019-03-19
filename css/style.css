@@ -22,7 +22,6 @@ nav {
   width: 30%;
   height: 100%; 
   background: #ccc;
-  padding: 20px;
 }
 
 /* Style the list inside the menu */
@@ -43,7 +42,7 @@ a:hover {
   color: #f1f1f1;
 }
   .widget{
-    width: 300px;
+    width: none;
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
@@ -64,14 +63,16 @@ a:hover {
   .widget:hover {
     border: 3px solid #FFFFFF;
     }
-  .widget-menu{
-    width: none;
-    display:block;
-    text-align:center;
-    font:24px short stack;text-shadow:0px 0px 0px #fff;
-    padding: 20px;
-    border:3px solid rgb(216, 153, 70);
-  }
+    .widget-menu{
+      width: none;
+      display:block;
+      text-align:center;
+      font:40px 'Sniglet', cursive;
+      text-shadow:0px 0px 0px #fff;
+      padding: 5px;
+      border:3px solid rgb(216, 153, 70);
+      background:rgb(216, 153, 70);
+    }
   #bar {
     text-align:left;
     height:100%;
