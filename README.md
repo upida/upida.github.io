@@ -3,8 +3,9 @@
 ## Instalasi
 
 Jika belum punya, install
-.._ NodeJS
-.._ NPM
+
+- NodeJS
+- NPM
 
 Install dependency
 
