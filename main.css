@@ -1,0 +1,113 @@
+/** GLOBAL **/
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+   background-color: #F0F3F3;
+   font-family: 'Sniglet', cursive;
+}
+
+/** LAYOUT **/
+.container {
+    max-width: 1500px;
+    margin: auto;
+    clear: both;
+}
+
+.row {
+    display: flex;
+    height: 100%;
+}
+
+.nav, .page {
+    float: left;
+    padding: 10px;
+    height: 100%;
+}
+.nav {
+    width: 30%;
+}
+.nav-title {
+    font:35px 'Sniglet', cursive;
+    padding-left: 90px;
+    width: 100%;
+    white-space:nowrap;
+	overflow:hidden;
+	-webkit-animation: ketik 5s steps(50, end);
+	animation: ketik 5s steps(50, end);
+}
+@keyframes ketik{
+    from {
+        width: 0;
+    }
+}
+
+@-webkit-keyframes ketik{
+    from { width: 0; }
+}
+.nav-content{
+    margin-top: 20%;
+    padding: 30px;
+}
+.widget{
+    display:block;
+    position:relative;
+    margin-top:none;
+    padding:10px;
+    cursor:pointer;
+    color:#000; 
+    z-index:0;
+    text-align:center;
+    font:35px 'Sniglet', cursive;
+    text-decoration:none;
+  
+  }
+.widget:before {
+    content: "";
+    position: absolute;
+    z-index:-1;
+    top: 0;  left: 0;  right: 0;  bottom: 0;
+    background: #F9FA9B;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition: transform .3s ease-out;
+}
+.widget:hover:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+#bar {
+    text-align:left;
+    height:100%;
+    padding:5px;overflow:auto;
+    }
+#open-page {
+    text-align:left;
+    padding:5px;overflow:auto;
+    }
+
+.page {
+    width: 70%;
+}
+.page-title {
+
+}
+.page-content {
+    
+}
+
+@media (max-width: 450px) {
+    .container .nav, .page {
+      width: 100%;
+      height: none;
+    }
+}
