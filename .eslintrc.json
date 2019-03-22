@@ -13,6 +13,13 @@
     "sourceType": "module"
   },
   "rules": {
-    "semi": [2, "always"]
+    "semi": [2, "always"],
+    "comma-dangle": ["error", "never"],
+    "import/no-extraneous-dependencies": [
+      "error",
+      { "devDependencies": false, "optionalDependencies": false, "peerDependencies": false }
+    ],
+    "arrow-parens": 0,
+    "prefer-destructuring": 0
   }
 }
