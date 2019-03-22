@@ -1,0 +1,117 @@
+/** GLOBAL **/
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+   background-color: #F0F3F3;
+   font-family: 'Sniglet', cursive;
+}
+
+.nav {
+    width: 30%;
+    padding-top: 30px;
+}
+.nav-title-position{
+    display: block;
+    width: 63%;
+    position: absolute;
+    left: 40%;
+    margin-left: -60px;
+}
+.nav-title {
+    font:35px 'Sniglet', cursive;
+    text-align: left;
+    width: 100%;
+	overflow:hidden;
+	-webkit-animation: ketik 5s steps(50, end);
+	animation: ketik 5s steps(50, end);
+}
+@keyframes ketik{
+    from {
+        width: 0;
+    }
+}
+
+@-webkit-keyframes ketik{
+    from { width: 0; }
+}
+.nav-content{
+    margin-top: 30%;
+    left: 50%;
+    margin-left: -50px;
+    
+}
+.widget{
+    display:block;
+    position:relative;
+    margin-top:none;
+    padding:10px;
+    cursor:pointer;
+    color:#000; 
+    z-index:0;
+    text-align:center;
+    font:35px 'Sniglet', cursive;
+    text-decoration:none;
+  
+  }
+.widget:before {
+    content: "";
+    position: absolute;
+    z-index:-1;
+    top: 0;  left: 0;  right: 0;  bottom: 0;
+    background: #F9FA9B;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition: transform .3s ease-out;
+}
+.widget:hover:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+#bar {
+    text-align:left;
+    height:100%;
+    padding:5px;overflow:auto;
+    }
+#open-page {
+    text-align:left;
+    padding:5px;overflow:auto;
+    }
+.page{
+    width: 70%;
+}
+/* Create two equal columns that floats next to each other */
+.nav, .page {
+  float: left;
+  height: 100%;
+  position: relative;
+}
+
+/* Clear floats after the columns */
+.row {
+    content: "";
+    display: table;
+    clear: both;
+    height: 100%;
+    width: 100%;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .nav, .page {
+    width: 100%;
+    height: auto;
+  }
+  .widget{
+      display: none;
+  }
+}
