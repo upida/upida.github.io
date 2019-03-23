@@ -18,10 +18,10 @@ npm install
 Ada 2 mode: development, dan production.
 Mode development digunakan untuk pengembangan, sedangkan production... ya produksi xd.
 
-Untuk menjalankan mode produksi, ketikkan
+Untuk menjalankan mode development, ketikkan
 
 ```bash
-npm run dev
+npm run start
 ```
 
 Sedangkan mode produksi, ketikkan
