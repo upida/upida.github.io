@@ -1,0 +1,118 @@
+/** GLOBAL **/
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  /* Remove scrollbar space */
+  background: transparent;
+  /* Optional: just make scrollbar invisible */
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.road-content a:visited {
+  color: #ac9393ff;
+}
+
+.road-content a:link {
+  color: #ac9393ff;
+}
+
+.row {
+  content: "";
+  display: table;
+  clear: both;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+
+
+
+
+/* main layout */
+
+.main-content {
+  width: 100%;
+  height: 90vh;
+}
+
+.main-title {
+  font-family: 'Saira Stencil One', cursive;
+  font-size: 200px;
+  text-align: center;
+  color: #ac9393ff;
+  opacity: 0.4;
+}
+
+.main-desc {
+  position: relative;
+  width: 45%;
+  text-align: center;
+  color: #483737ff;
+  font-size: 55px;
+  font-family: 'Saira Stencil One', cursive;
+  margin-top: -12%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+/* road layout */
+
+.road-content {
+  width: 100%;
+  height: 100vh;
+  background-color: #ac9393ff;
+}
+
+.to_my_road {
+  top: 300px;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Saira Stencil One', cursive;
+  color: #ac9393ff;
+  background-color: #ffffff;
+  height: 10%;
+  margin: auto;
+  cursor: default;
+}
+
+
+/* mobile setting */
+@media only screen and (max-width: 600px) {
+  .main-title {
+    font-size: 100px;
+    margin: 5%;
+    opacity: 1;
+  }
+
+  .main-desc {
+    font-size: 30px;
+    width: 90%;
+  }
+
+  .main-content {
+    height: 80vh;
+  }
+}
