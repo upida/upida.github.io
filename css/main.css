@@ -21,9 +21,7 @@ body {
 
 ::-webkit-scrollbar {
   width: 0px;
-  /* Remove scrollbar space */
   background: transparent;
-  /* Optional: just make scrollbar invisible */
 }
 
 a:link {
@@ -84,6 +82,11 @@ a:link {
   width: 100%;
   height: 100vh;
   background-color: #ac9393ff;
+  position: absolute;
+}
+
+#road {
+  top: 100;
 }
 
 .to_my_road {
