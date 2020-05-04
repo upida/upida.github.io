@@ -14,7 +14,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #000000;
   background-color: #ffffff;
 }
@@ -37,16 +37,13 @@ a:link {
 }
 
 .row {
-  content: "";
+  content: '';
   display: table;
   clear: both;
   width: 100%;
   height: 100vh;
   margin: 0;
 }
-
-
-
 
 /* main layout */
 
@@ -75,13 +72,34 @@ a:link {
   margin-left: auto;
 }
 
+/* post layout */
+.post {
+  width: 80%;
+  margin: 5% auto;
+}
+
+.post-title {
+  font-size: 70px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  color: #ac9393ff;
+}
+
+.post-subtitle {
+  font-family: 'Poppins', sans-serif;
+  margin: -10px 0px 20px 10px;
+}
+
+.post-desc {
+  width: 50%;
+}
 
 /* road layout */
 
 .road-content {
   width: 100%;
   height: 100vh;
-  background-color: #ac9393ff;
+  background-color: #ffffff;
   position: absolute;
 }
 
@@ -90,17 +108,19 @@ a:link {
 }
 
 .to_my_road {
-  top: 300px;
   text-align: center;
   font-size: 30px;
   font-family: 'Saira Stencil One', cursive;
   color: #ac9393ff;
-  background-color: #ffffff;
+  opacity: 0.4;
   height: 10%;
   margin: auto;
-  cursor: default;
 }
-
+.to_my_post {
+  margin-top: -30px;
+  height: 90vh;
+  overflow: scroll;
+}
 
 /* mobile setting */
 @media only screen and (max-width: 600px) {
@@ -117,5 +137,9 @@ a:link {
 
   .main-content {
     height: 80vh;
+  }
+
+  .post-desc {
+    width: 100%;
   }
 }
