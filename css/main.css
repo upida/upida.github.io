@@ -14,9 +14,9 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #000000;
-  background-color: #ffffff;
+  background-color: #f9f9f9;
 }
 
 ::-webkit-scrollbar {
@@ -47,7 +47,7 @@ a:link {
 
 /* main layout */
 
-.main-content {
+.main {
   width: 100%;
   height: 90vh;
 }
@@ -74,24 +74,41 @@ a:link {
 
 /* post layout */
 .post {
-  width: 80%;
+  width: 60%;
   margin: 5% auto;
+  border: 1px solid #e2d0d0;
+  border-radius: 5px;
+  padding: 15px 30px;
 }
 
 .post-title {
-  font-size: 70px;
-  font-weight: bold;
-  font-family: 'Poppins', sans-serif;
+  font-size: 50px;
   color: #ac9393ff;
+  text-align: center;
 }
 
 .post-subtitle {
-  font-family: 'Poppins', sans-serif;
-  margin: -10px 0px 20px 10px;
+  margin: 20px 0;
+  color: #ac9393ff;
+  opacity: 0.4;
+  text-align: center;
 }
 
 .post-desc {
-  width: 50%;
+  font-size: 20px;
+  color: #4d4d4d;
+}
+
+.post-link {
+  font-size: 20px;
+  color: #ac9393;
+  width: 80px;
+  background-color: #eee9e9;
+  text-align: center;
+  padding: 5px;
+  margin-top: 30px;
+  margin-left: 85%;
+  border-radius: 5px;
 }
 
 /* road layout */
@@ -99,7 +116,7 @@ a:link {
 .road-content {
   width: 100%;
   height: 100vh;
-  background-color: #ffffff;
+  background-color: #f9f9f9;
   position: absolute;
 }
 
@@ -111,12 +128,13 @@ a:link {
   text-align: center;
   font-size: 30px;
   font-family: 'Saira Stencil One', cursive;
-  color: #ac9393ff;
+  color: #ac9393;
   opacity: 0.4;
-  height: 10%;
+  height: 80px;
   margin: auto;
 }
-.to_my_post {
+
+.main-post {
   margin-top: -30px;
   height: 90vh;
   overflow: scroll;
@@ -135,11 +153,11 @@ a:link {
     width: 90%;
   }
 
-  .main-content {
+  .main {
     height: 80vh;
   }
 
-  .post-desc {
-    width: 100%;
+  .post {
+    width: 90%;
   }
 }
